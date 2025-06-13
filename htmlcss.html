@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <style>
+     body{
+        background: lightblue;
+     }
+     div{
+        width:400px;
+        height:250px;
+        background: white;
+        padding:50px;
+        margin-left: 300px;
+        border-radius: 12px;
+     }
+     form{
+        padding:10px;
+     }
+     fieldset{
+        border:2px solid blue;
+        border-radius: 4px;
+     }
+     legend{
+        color:red;
+        font-weight: 800;
+     }
+     input{
+        padding:10px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        width:350px;
+        border:none;
+        background: lightgray;
+     }
+     ::placeholder{
+        color:white;
+     }
+     button{
+        padding: 10px;
+        cursor: pointer;
+        border:none;
+        width: 373px;
+        color:white;
+        background: blue;
+        text-align: center;
+        font-size:16px;
+        font-weight: 600;
+        border-radius: 4px;
+    }
+    small{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4px;
+    }
+    a{
+        /* text-decoration: none; */
+    }
+    </style>
+</head>
+<body>
+   <div>
+    <form>
+        <fieldset>
+            <legend>Login</legend>
+            <input type="text" placeholder="Enter Email"> <br>
+            <input type="password" placeholder="Enter Password"><br>
+            <button>Login</button> <br>
+            <small>Already have an account? <a href="#">Register</a></small>
+        </fieldset>
+    </form>
+   </div>
+</body>
+</html>
